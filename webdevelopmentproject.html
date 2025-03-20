@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bus Ticket Booking</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Bus Ticket Booking</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#book-ticket">Book Ticket</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <h2>Welcome to EasyBus</h2>
+        <p>Your journey starts here! Book your bus tickets with ease.</p>
+    </section>
+
+    <!-- Book Ticket Section -->
+    <section id="book-ticket">
+        <h2>Book Your Bus Ticket</h2>
+        <form id="booking-form">
+            <label for="from">From:</label>
+            <input type="text" id="from" name="from" placeholder="Enter departure city" required>
+
+            <label for="to">To:</label>
+            <input type="text" id="to" name="to" placeholder="Enter destination city" required>
+
+            <label for="date">Date of Travel:</label>
+            <input type="date" id="date" name="date" required>
+
+            <label for="passengers">Number of Passengers:</label>
+            <input type="number" id="passengers" name="passengers" min="1" required>
+
+            <button type="submit">Search Buses</button>
+        </form>
+    </section>
+
+    <!-- Available Buses Section -->
+    <section id="available-buses">
+        <h2>Available Buses</h2>
+        <div class="bus-list">
+            <!-- Bus list items will be dynamically inserted here (e.g., with JavaScript) -->
+        </div>
+    </section>
+
+    <!-- Contact Us Section -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>If you have any questions, feel free to reach out to us!</p>
+        <p>Email: support@easybus.com</p>
+        <p>Phone: 1-800-EASYBUS</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 EasyBus. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
